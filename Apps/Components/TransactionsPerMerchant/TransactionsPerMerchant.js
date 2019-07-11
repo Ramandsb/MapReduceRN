@@ -6,6 +6,7 @@ import Topbar from '../common/Topbar'
 import colors from '../../assets/colors'
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios'
+import Config from '../../Config'
 
 export default class TransactionsPerMerchant extends Component {
 
@@ -21,7 +22,7 @@ export default class TransactionsPerMerchant extends Component {
     }
 
     fetchTransactions() {
-        axios('http://192.168.2.36:3000/transactions/transaction_one', {
+        axios(`${Config.url}/transactions/transaction_one`, {
             headers: {
                 'Content-Type': 'application/json'
             }

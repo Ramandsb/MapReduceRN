@@ -8,6 +8,7 @@ import { Actions } from 'react-native-router-flux';
 import axios from 'axios'
 import { FontAwesome ,Ionicons,Entypo} from '@expo/vector-icons';
 import moment from 'moment'
+import Config from '../../Config'
 export default class AllTransactions extends Component {
 
     constructor(props) {
@@ -20,7 +21,7 @@ export default class AllTransactions extends Component {
         this.fetchAllTransactions()
     }
     fetchAllTransactions() {
-        axios('http://192.168.2.36:3000/transactions', {
+        axios(`${Config.url}/transactions`, {
             headers: {
                 'Content-Type': 'application/json'
             }

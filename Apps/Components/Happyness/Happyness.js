@@ -7,6 +7,7 @@ import colors from '../../assets/colors'
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios'
 import Speedometer from 'react-native-speedometer-chart';
+import Config from '../../Config'
 
 export default class Happyness extends Component {
 
@@ -22,7 +23,7 @@ export default class Happyness extends Component {
     }
 
     fetchHappyness() {
-        axios('http://192.168.2.36:3000/transactions/transaction_two', {
+        axios(`${Config.url}/transactions/transaction_two`, {
             headers: {
                 'Content-Type': 'application/json'
             }
