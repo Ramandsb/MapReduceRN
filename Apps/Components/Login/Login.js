@@ -17,7 +17,7 @@ export default class Login extends Component {
 
     renderLoginButton(){
         const { firstName } = this.state
-        if(firstName === "John" || firstName === "Luke"){
+        if(firstName.toLocaleLowerCase() === "john" || firstName.toLocaleLowerCase() === "luke"){
             Actions.choosemerchant({username:firstName})
         }else{
             alert("Only John and Luke are on the app right now.")
@@ -27,15 +27,10 @@ export default class Login extends Component {
     render() {
         return (
             <View style={styles.container}>
-                {/* <Topbar
-                    iconColor={colors.darkBlue}
-                    // backPressed={() => {
-                    //     alert('back')
-                    // }}
-                    screenName='Login' /> */}
+                
                 <View style={styles.main}>
                     <View style={{width:'100%',alignItems:'center',marginTop:50}}>
-                            <Text style={{color:colors.heartRed,fontSize:20,fontWeight:'500'}}>Login to continue.</Text>
+                            <Text style={{color:colors.darkBlue,fontSize:24,fontWeight:'500'}}>Welcome</Text>
                     </View>
                     <View style={{ width: '80%', marginTop: 150 }}>
                         <Text style={{ fontSize: 12, color: colors.darkBlue, fontWeight: '700' }}>Name</Text>

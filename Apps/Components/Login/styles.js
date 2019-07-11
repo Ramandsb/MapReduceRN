@@ -25,7 +25,7 @@ export default StyleSheet.create({
         backgroundColor:
         colors.darkBlue,
         borderRadius: 20,
-        backgroundColor:colors.heartRed
+        backgroundColor:colors.darkBlue
     }
 
 });

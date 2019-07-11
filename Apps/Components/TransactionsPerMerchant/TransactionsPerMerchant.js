@@ -38,13 +38,13 @@ export default class TransactionsPerMerchant extends Component {
         return (
             <View style={styles.container}>
                 <Topbar
-                    iconColor={colors.timRed}
+                    iconColor={colors.darkBlue}
                     backPressed={() => {
                         Actions.pop();
                     }}
                     screenName='Transactions' />
                 <View style={{ marginTop: 100 }}>
-                    <Text style={{ color: colors.heartRed, fontSize: 20, fontWeight: '500', marginTop: 30 }}>Transactions per merchant</Text>
+                    <Text style={{ color: colors.darkBlue, fontSize: 20, fontWeight: '500', marginTop: 30 }}>Transactions per merchant</Text>
                 </View>
                 <View style={{ width: '100%', flexDirection: 'row', marginTop: 100, justifyContent: 'space-around', alignItems: 'center' }}>
                     <View style={{ borderRadius: 20,alignItems:'center' }}>

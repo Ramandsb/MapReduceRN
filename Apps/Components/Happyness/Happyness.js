@@ -40,13 +40,13 @@ export default class Happyness extends Component {
         return (
             <View style={styles.container}>
                 <Topbar
-                    iconColor={colors.timRed}
+                    iconColor={colors.darkBlue}
                     backPressed={() => {
                         Actions.pop();
                     }}
                     screenName='Transactions' />
                 <View style={{ marginTop: 100 }}>
-                    <Text style={{ color: colors.heartRed, fontSize: 20, fontWeight: '500', marginTop: 30 }}>Happyness Meters</Text>
+                    <Text style={{ color: colors.darkBlue, fontSize: 20, fontWeight: '500', marginTop: 30 }}>Happyness Meters</Text>
                 </View>
                 <View style={{ width: '100%', marginTop: 100, justifyContent: 'space-around', alignItems: 'center' }}>
 

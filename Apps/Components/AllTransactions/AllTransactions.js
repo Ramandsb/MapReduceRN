@@ -73,7 +73,7 @@ export default class AllTransactions extends Component {
         return (
             <View style={styles.container}>
                 <Topbar
-                    iconColor={colors.timRed}
+                    iconColor={colors.darkBlue}
                     backPressed={() => {
                         Actions.pop();
                     }}
